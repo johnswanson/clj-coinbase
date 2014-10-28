@@ -14,3 +14,5 @@
             [clojure.tools.namespace.repl :refer [refresh refresh-all]]
             [environ.core :refer [env]]))
 
+(def k (:coinbase-api-key env))
+(def s (:coinbase-api-secret env))
