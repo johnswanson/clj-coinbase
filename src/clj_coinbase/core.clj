@@ -1,17 +1,6 @@
 (ns clj-coinbase.core
   (:require [org.httpkit.client :as c]))
 
-(def default-config
-  {:version 1
-   :key nil
-   :secret nil
-   :auth-method :api-key})
-
-(defn base-url [client]
-  (case (:version client)
-    1 "https://api.coinbase.com/v1/"
-    "https://api.coinbase.com/v1/"))
-
 (defn with-api-key [client key secret]
   (assoc client
     :key key
@@ -27,7 +16,8 @@
   (assoc client :account-id id))
 
 (defn client []
-  {:nonce (atom 0)})
-
-(defn connection [client]
-  (merge client default-config))
+  {:nonce (atom 0)
+   :version 1
+   :key nil
+   :secret nil
+   :auth-method nil})
