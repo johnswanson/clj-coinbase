@@ -1,6 +1,6 @@
 (ns user
-  (:require [clj-http.client :as c]
-            [clj-http.fake :refer :all]
+  (:require [org.httpkit.client :as c]
+            [org.httpkit.fake :refer :all]
             [clojure.test :refer :all]
             [clj-coinbase.core :refer :all]
             [clojure.java.io :as io]

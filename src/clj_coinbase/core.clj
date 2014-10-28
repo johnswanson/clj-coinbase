@@ -1,5 +1,5 @@
 (ns clj-coinbase.core
-  (:require [clj-http.client :as c]))
+  (:require [org.httpkit.client :as c]))
 
 (def default-config
   {:version 1
