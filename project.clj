@@ -10,4 +10,8 @@
   :plugins [[lein-environ "1.0.0"]]
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [environ "1.0.0"]
-                 [http-kit "2.1.18"]])
+                 [http-kit "2.1.18"]
+                 [pandect "0.4.1"]
+                 [clj-time "0.8.0"]
+                 [cheshire "5.3.1"]
+                 [ring/ring-codec "1.0.0"]])
