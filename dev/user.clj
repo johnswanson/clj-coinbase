@@ -3,7 +3,6 @@
             [org.httpkit.fake :refer :all]
             [clojure.test :refer :all]
             [clj-coinbase.core :refer :all]
-            [clj-coinbase.http :refer :all]
             [clojure.java.io :as io]
             [clojure.java.javadoc :refer [javadoc]]
             [clojure.pprint :refer [pprint]]

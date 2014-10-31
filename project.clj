@@ -8,7 +8,8 @@
                    :source-paths ["dev"]
                    :resource-paths ["test/resources"]}}
   :plugins [[lein-environ "1.0.0"]]
-  :dependencies [[org.clojure/clojure "1.6.0"]
+  :dependencies [[org.clojure/clojure "1.7.0-alpha3"]
+                 [org.clojure/tools.macro "0.1.5"]
                  [environ "1.0.0"]
                  [http-kit "2.1.18"]
                  [pandect "0.4.1"]
